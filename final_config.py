@@ -1,4 +1,11 @@
-TOKEN = '7650586967:AAGAL5DFhf6dyt5PcPYlBM7XK5m0-_qfwPQ'
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
+
+
 
 keys = {             # Словарь для соответствия названий валют их кодам
     'евро': 'EUR',
